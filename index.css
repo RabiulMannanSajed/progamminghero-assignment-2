@@ -1,0 +1,363 @@
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    /*--------
+ Header section 
+ --------------- */
+ header {
+    width: 1500px;
+    margin-left: 100px;
+}
+
+.header-div {
+    display: flex;
+}
+
+.header-h3 {
+    width: 250px;
+    
+    font-size: 20px;
+    color: black;
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+    margin-left: 500px;
+
+}
+
+.topnav a {
+    float: left;
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav i {
+    float: left;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 5px;
+}
+
+/* introduction-section */
+.introduction-section{
+    width: 900px;
+    margin-left:200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.introduction-section-h2{
+    width: 550px;
+    font-size: 50px;
+    
+}
+.introduction-section-p{
+    width: 400px;
+    font-size: 20px;
+    line-height: 1.5rem;
+    
+}
+.introduction-img{
+    margin-bottom: 50px;
+}
+.introduction-img:hover{
+    transform: scale(1.3);
+    transition: transform 2s ease-in-out;
+}
+.introduction-button{
+    background-color: cornflowerblue;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+/* 
+Popular Collection item  
+*/
+    
+.Collection-h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    margin-right: 160px;
+}
+
+.item{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    width: 800px;
+    margin-left: 250px;
+    /* align-items: center; */
+    justify-content: center;
+}
+.div-background-color{
+    background-color: whitesmoke;
+    margin: 0 7px 5px;
+    border-radius: 7px;
+    box-shadow: 7px 6px 5px grey;
+}
+.product-rating{
+    display: flex;
+    align-items: center;
+}
+.fa-star.filled{
+    color: #faca51;
+    width: 12px;
+}
+.fa-star.empty{
+    color: #dadada;
+}
+h3,h4{
+    font-size: 30px;
+}
+
+/* see more button */
+.see-more{
+    position: relative;
+    left: 1050px;
+    
+ }
+ .see-more a{
+     text-decoration: none;
+     color: rgba(10, 29, 82, 0.747);
+ }
+ .see-more i{
+     padding: 10px;
+ }
+           
+
+/* trade-section */
+.trade-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    }
+    .trade-join{
+        padding: 10px;
+    }
+    .trade-h3{
+        font-size: 25px;
+    }
+    .trade-p{
+        width: 350px;
+        font-size: 20px;
+        line-height: 1.5rem;
+    }
+    .trade-button{
+        background-color: cornflowerblue;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    .trade-img{
+        width:  200px;
+        height: 200px;
+    }
+    .trade-card  {
+        padding: 10px;
+    }
+    .card-img{
+        width: 50px;
+        height: 50px;
+    }
+    .trade-country{
+        padding: 10px;
+    }
+    .flag{
+        padding: 2px;
+        width: 50px;
+        height: 50px;
+        border-radius: 40px;
+    }
+    
+    /* footer section */
+    
+    
+    .footer-section{
+        padding-top: 30px;
+        padding-bottom: 20px;
+        text-align: center;
+        background-color: #0A2236;
+        color: whitesmoke;
+    }
+    footer i{
+        
+        padding-left: 5px;
+    }
+
+
+@media (max-width:688px) {
+
+    /*
+    media qu of  Header section
+    */
+    header{
+        width: 100%;
+      
+    }
+    .header-h3{
+        text-align: center;
+        margin-left: 30px;
+    }
+ .topdiv{
+        display:none;
+    }
+    /*
+    media qu of introduction-section 
+    */
+
+.introduction-section{
+    width: 100%;
+    flex-direction: column;
+    margin-left: 10px;
+    }
+ .introduction-section-h2{
+        width: 250px;
+        font-size: 25px;
+        
+    }
+.introduction-section-p{
+         width: 300px;
+        font-size: 16px;
+        line-height: 1.5rem;
+        
+    }   
+
+    .introduction-button{
+        font-size: 16px;
+        background-color: cornflowerblue;
+        text-decoration: none;
+        padding: 7px;
+        border-radius: 5px;
+    }
+.introduction-img{
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 300px;
+    height: 300px;
+}
+
+ 
+/* 
+ media qu of Popular Collection item  
+*/ 
+.items{
+    width: 100%;
+    grid-template-columns: repeat(1,1fr);
+    margin-left: 0px;
+  }
+
+  /* media qu of see more button */
+
+  .see-more{
+    position: relative;
+    left: 10px;
+    
+ }
+    /*media qu of trade-section */
+    .trade-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        }
+
+
+}
+@media (min-width:689px) and (max-width:991px){
+  
+  /*
+    media qu of  Header section
+    */
+    header{
+        width: 100%;
+      
+    }
+    .header-h3{
+        text-align: center;
+    
+    }
+ .topdiv{
+        display:none;
+    }
+  
+    /*  media qu of introduction-section */
+.introduction-section{
+    width: 100%;
+    flex-direction: column;
+    margin-left: 10px;
+    }
+ .introduction-section-h2{
+        width: 250px;
+        font-size: 25px;
+        
+    }
+.introduction-section-p{
+         width: 300px;
+        font-size: 16px;
+        line-height: 1.5rem;
+        
+    }   
+
+    .introduction-button{
+        font-size: 16px;
+        background-color: cornflowerblue;
+        text-decoration: none;
+        padding: 7px;
+        border-radius: 5px;
+    }
+.introduction-img{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 30px;
+    width: 300px;
+    height: 300px;
+}
+
+   /* 
+media qu of Popular Collection item  
+*/ 
+.items{
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 0px;
+  }
+   /* media qu of see more button */
+  .see-more{
+    position: relative;
+    left: 10px;
+    
+ }
+   /*media qu of trade-section */
+   .trade-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+}
